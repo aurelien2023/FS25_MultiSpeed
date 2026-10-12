@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="114">
+    <author>FS25 MultiSpeed</author>
+    <version>1.0.0.0</version>
+    
+    <title>
+        <en>Multi Speed</en>
+        <de>Mehrfachgeschwindigkeit</de>
+        <fr>Vitesses Multiples</fr>
+    </title>
+    
+    <description>
+        <en><![CDATA[Configure speed limits when buying equipment in the store. Implements with a working speed limit offer predefined speeds from "10 to 50 km/h", "Default" to keep the original limit, or "No limit" to remove the working speed restriction. Motorized vehicles offer "Default" to keep the original speed caps, or "No limit" to remove the forward and reverse speed caps without changing the transmission. The achievable speed still depends on the vehicle's power and transmission.
+        
+        In game, Left Alt + 0 activates temporary "No limit" for the driven vehicle and all compatible attached implements, including implements attached through other implements, regardless of the HUD selection. Press again to restore each object's own store speed setting. This temporary mode is not saved: loading the savegame restores the store settings. Detached implements immediately regain their previous setting; newly attached implements keep their store setting. If attachments change while the mode is active, the next press disables it for the current combination; the following press activates it for the new combination.]]>
+        </en>
+
+        <de><![CDATA[Geschwindigkeitsbegrenzungen beim Kauf im Shop konfigurieren. Geräte mit einer Arbeitsgeschwindigkeitsbegrenzung bieten vordefinierte Geschwindigkeiten von "10 bis 50 km/h", "Standard" zum Beibehalten der ursprünglichen Grenze oder "Ohne Limit" zum Aufheben der Arbeitsgeschwindigkeitsbegrenzung. Motorisierte Fahrzeuge bieten "Standard" zum Beibehalten der ursprünglichen Geschwindigkeitsgrenzen oder "Ohne Limit" zum Aufheben der Begrenzung für Vorwärts- und Rückwärtsfahrt, ohne das Getriebe zu verändern. Die erreichbare Geschwindigkeit hängt weiterhin von der Leistung und dem Getriebe des Fahrzeugs ab.
+        
+        Im Spiel aktiviert die linke Alt-Taste + 0 vorübergehend "Ohne Limit" für das gefahrene Fahrzeug und alle kompatiblen angehängten Geräte, auch über andere Geräte angehängte Geräte, unabhängig von der Auswahl im HUD. Erneutes Drücken stellt für jedes Fahrzeug und Gerät seine eigene Geschwindigkeitseinstellung aus dem Shop wieder her. Dieser temporäre Modus wird nicht gespeichert: Beim Laden des Spielstands gelten wieder die Shop-Einstellungen. Abgekoppelte Geräte erhalten sofort ihre vorherige Einstellung zurück; neu angekoppelte Geräte behalten ihre Shop-Einstellung. Wird das Gespann bei aktivem Modus verändert, deaktiviert der nächste Tastendruck den Modus für das aktuelle Gespann; der darauffolgende aktiviert ihn für das neue Gespann.]]>
+        </de>
+
+        <fr><![CDATA[Configurer les limites de vitesse à l'achat en magasin. Les outils disposant d'une limite de vitesse de travail proposent des vitesses prédéfinies de "10 à 50 km/h", "Par défaut" pour conserver la limite d'origine, ou "Sans limite" pour supprimer la limitation de vitesse de travail. Les véhicules motorisés proposent "Par défaut" pour conserver les limites d'origine, ou "Sans limite" pour supprimer le bridage de vitesse en marche avant et arrière, sans modifier la transmission. La vitesse atteignable dépend toujours de la puissance et de la transmission du véhicule.
+        
+        En jeu, Alt gauche + 0 active temporairement "Sans limite" sur le véhicule conduit et tous ses outils attelés compatibles, y compris les outils attelés en chaîne, indépendamment de la sélection du HUD. Un second appui restaure le réglage de vitesse choisi au magasin pour chaque véhicule ou outil. Ce mode temporaire n'est pas sauvegardé : au rechargement de la partie, les réglages magasin sont réappliqués. Les outils dételés retrouvent immédiatement leur réglage précédent ; les nouveaux outils attelés conservent leur réglage magasin. Si l'attelage change pendant que le mode est actif, l'appui suivant le désactive pour l'ensemble actuel ; l'appui d'après l'active pour le nouvel ensemble.]]>
+        </fr>
+    </description>
+    
+    <iconFilename>icon_multiSpeed.dds</iconFilename>
+    <multiplayer supported="true"/>
+    
+    <extraSourceFiles>
+        <sourceFile filename="multiSpeedRegister.lua"/>
+    </extraSourceFiles>
+    
+    <l10n>
+        <text name="CONFIG_TITLE">
+            <en>Speed limit</en>
+            <de>Tempolimit</de>
+            <fr>Limite de vitesse</fr>
+        </text>
+        <text name="CONFIG_OFF">
+            <en>Default</en>
+            <de>Standard</de>
+            <fr>Par défaut</fr>
+        </text>
+        <text name="CONFIG_NO_LIMIT">
+            <en>No limit</en>
+            <de>Ohne Limit</de>
+            <fr>Sans limite</fr>
+        </text>
+        <text name="CONFIG_KPH">
+            <en>km/h</en>
+            <de>km/h</de>
+            <fr>km/h</fr>
+        </text>
+
+        <text name="input_MULTISPEED_TEMP_NO_LIMIT">
+            <en>Toggle temporary No limit (vehicle and attached tools)</en>
+            <de>Temporär ohne Limit umschalten (Fahrzeug und angehängte Geräte)</de>
+            <fr>Basculer Sans limite temporaire (véhicule et outils attelés)</fr>
+        </text>
+        <text name="MULTISPEED_ENABLE_NO_LIMIT">
+            <en>Activate temporary No limit</en>
+            <de>Temporär ohne Limit aktivieren</de>
+            <fr>Activer Sans limite temporaire</fr>
+        </text>
+        <text name="MULTISPEED_RESTORE_STORE">
+            <en>Restore store speed setting</en>
+            <de>Geschwindigkeitseinstellung aus dem Shop wiederherstellen</de>
+            <fr>Restaurer le réglage de vitesse du magasin</fr>
+        </text>
+    </l10n>
+    
+
+    <actions>
+        <action name="MULTISPEED_TEMP_NO_LIMIT" category="VEHICLE"/>
+    </actions>
+
+    <inputBinding>
+        <actionBinding action="MULTISPEED_TEMP_NO_LIMIT">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_0" axisComponent="+" neutralInput="0" index="1"/>
+        </actionBinding>
+    </inputBinding>
+
+</modDesc>

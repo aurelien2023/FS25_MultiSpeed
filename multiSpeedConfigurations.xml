@@ -1,0 +1,29 @@
+<vehicle>
+    <multiSpeed>
+        <multiSpeedConfigurations>
+            <multiSpeedConfiguration name="OFF" isDefault="true" />
+            <multiSpeedConfiguration name="No limit" isDefault="false" />
+            <multiSpeedConfiguration name="10" isDefault="false" />
+            <multiSpeedConfiguration name="11" isDefault="false" />
+            <multiSpeedConfiguration name="12" isDefault="false" />
+            <multiSpeedConfiguration name="13" isDefault="false" />
+            <multiSpeedConfiguration name="14" isDefault="false" />
+            <multiSpeedConfiguration name="15" isDefault="false" />
+            <multiSpeedConfiguration name="16" isDefault="false" />
+            <multiSpeedConfiguration name="17" isDefault="false" />
+            <multiSpeedConfiguration name="18" isDefault="false" />
+            <multiSpeedConfiguration name="19" isDefault="false" />
+            <multiSpeedConfiguration name="20" isDefault="false" />
+            <multiSpeedConfiguration name="21" isDefault="false" />
+            <multiSpeedConfiguration name="22" isDefault="false" />
+            <multiSpeedConfiguration name="23" isDefault="false" />
+            <multiSpeedConfiguration name="24" isDefault="false" />
+            <multiSpeedConfiguration name="25" isDefault="false" />
+            <multiSpeedConfiguration name="30" isDefault="false" />
+            <multiSpeedConfiguration name="35" isDefault="false" />
+            <multiSpeedConfiguration name="40" isDefault="false" />
+            <multiSpeedConfiguration name="45" isDefault="false" />
+            <multiSpeedConfiguration name="50" isDefault="false" />
+        </multiSpeedConfigurations>
+    </multiSpeed>
+</vehicle>
